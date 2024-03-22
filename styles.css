@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "Segoe WPN";
   src: url("SegoeWPN.woff");
@@ -12,23 +19,38 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 50px;
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 55%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-content: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .menu li {
@@ -44,9 +66,13 @@ body {
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-width: 45%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* Slideshow container */
@@ -62,17 +88,31 @@ body {
 }
 
 .container_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 4rem;
 }
 
 .slide-content {
   margin-left: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container_content img {
@@ -108,6 +148,8 @@ body {
   font-size: 22px;
   font-family: "Segoe UI", sans-serif;
   font-weight: lighter;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -125,8 +167,13 @@ body {
   width: auto;
   margin-top: -23px;
   padding: 17px;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
   transition: 0.4s ease;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* Place the "forward button" to the right */
@@ -169,13 +216,19 @@ body {
 
 footer {
   background-image: url("./assets/footer_bg.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2rem 8rem;
 }
 
 footer .footer-section {
-  flex: 1 1 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
 }
 
 .footer-section {
@@ -190,12 +243,21 @@ footer .footer-section {
 }
 
 .footer-section .footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 100%;
-  align-content: flex-end;
-  flex-wrap: wrap;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-section a {
@@ -206,5 +268,7 @@ footer .footer-section {
 
 .footer-section a:hover {
   text-decoration: underline;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
