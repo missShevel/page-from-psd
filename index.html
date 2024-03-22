@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tabs.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="forms.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="zero.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <img src="./assets/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="slideshow-container fade">
+        <!-- Full images / Content -->
+        <div class="container_wrap">
+          <div class="container_content">
+            <img src="./assets/icon.png" />
+            <div class="slide-content">
+              <h1>Introducing</h1>
+              <p class="capture">Something hot.....</p>
+              <button class="banner_btn" onclick="location.href = '#';">
+                Try Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container_wrap">
+          <div class="container_content">
+            <img src="./assets/icon.png" />
+            <div class="slide-content">
+              <h1>Introducing</h1>
+              <p class="capture">Something hot2.....</p>
+              <button class="banner_btn">Try Demo</button>
+            </div>
+          </div>
+        </div>
+        <div class="container_wrap">
+          <div class="container_content">
+            <img src="./assets/icon.png" />
+            <div class="slide-content">
+              <h1>Introducing</h1>
+              <p class="capture">Something hot3.....</p>
+              <button class="banner_btn">Try Demo</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prev and Next buttons -->
+        <a class="Back" onclick="plusSlides(-1)"
+          ><img src="./assets/arrow_left.png"
+        /></a>
+        <a class="forward" onclick="plusSlides(1)"
+          ><img src="./assets/arrow_right.png"
+        /></a>
+      </div>
+    </header>
+    <main>
+      <div class="pc-tab">
+        <input id="tab1" type="radio" checked name="pct" />
+        <input id="tab2" type="radio" name="pct" />
+        <input id="tab3" type="radio" name="pct" />
+        <input id="tab4" type="radio" name="pct" />
+        <ul>
+          <li class="tab1">
+            <label for="tab1">
+              <div class="tab-icon">
+                <img src="./assets/mobile_icon.png" />
+              </div>
+              <div class="tab-text">
+                <h2>Responsive</h2>
+                <p>Websites</p>
+              </div>
+            </label>
+          </li>
+          <li class="tab2">
+            <label for="tab2">
+              <div class="tab-icon">
+                <img src="./assets/cart_icon.png" />
+              </div>
+              <div class="tab-text">
+                <h2>e Commerce</h2>
+                <p>Websites</p>
+              </div></label
+            >
+          </li>
+          <li class="tab3">
+            <label for="tab3">
+              <div class="tab-icon">
+                <img src="./assets/globe_icon.png" />
+              </div>
+              <div class="tab-text">
+                <h2>Daily blog</h2>
+                <p>Websites</p>
+              </div></label
+            >
+          </li>
+          <li class="tab4">
+            <label for="tab4">
+              <div class="tab-icon">
+                <img src="./assets/search_icon.png" />
+              </div>
+              <div class="tab-text">
+                <h2>Search bsed</h2>
+                <p>Websites</p>
+              </div></label
+            >
+          </li>
+        </ul>
+        <section>
+          <div class="tab1">
+            <div class="tab-image">
+              <img src="./assets/ipad.png" />
+            </div>
+            <h2>Lorem Ipsum is simply dummy text</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+              lobortis dui. Etiam vulputate consequat facilisis. Pellentesque
+              luctus felis vel quam lobortis molestie. Vivamus elit quam, dictum
+              eget ipsum vitae, vulputate imperdiet velit. Sed diam mauris,
+              lacinia vitae justo luctus, eleifend fermentum dolor. Vivamus
+              elementum ultrices magna, vel tincidunt odio rhoncus id. Nunc
+              scelerisque faucibus felis, a euismod mi iaculis non. Pellentesque
+              mollis eros metus, tincidunt cursus magna iaculis et. Donec
+              faucibus vulputate dui. Pellentesque habitant morbi tristique
+              senectus et netus et malesuada fames ac turpis egestas. Etiam
+              rhoncus mollis orci, ac tincidunt justo elementum euismod. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos. Cras lobortis et arcu sit amet laoreet.
+              Vivamus rutrum, nunc ac sollicitudin convallis, lectus tellus
+              sollicitudin massa, vel pharetra diam ante a velit. Quisque
+              dignissim elit felis, id pellentesque dui maximus nec. Vestibulum
+              molestie euismod mi, sed ultricies ante ultricies a.
+            </p>
+            <p>
+              Nullam commodo maximus quam et vehicula. Cras ut pharetra eros.
+              Curabitur vel erat efficitur, sodales ex in, efficitur libero.
+              Duis vulputate leo nibh, et placerat est vulputate ac. Maecenas
+              fringilla, mi sit amet aliquet tempor, est velit fermentum nibh,
+              id condimentum est tortor sit amet ex. Fusce eget vehicula neque.
+              Nulla facilisi.
+            </p>
+          </div>
+          <div class="tab2">
+            <div class="tab-image">
+              <img src="./assets/ipad.png" />
+            </div>
+            <h2>Lorem Ipsum is simply dummy text</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+              lobortis dui. Etiam vulputate consequat facilisis. Pellentesque
+              luctus felis vel quam lobortis molestie. Vivamus elit quam, dictum
+              eget ipsum vitae, vulputate imperdiet velit. Sed diam mauris,
+              lacinia vitae justo luctus, eleifend fermentum dolor. Vivamus
+              elementum ultrices magna, vel tincidunt odio rhoncus id. Nunc
+              scelerisque faucibus felis, a euismod mi iaculis non. Pellentesque
+              mollis eros metus, tincidunt cursus magna iaculis et. Donec
+              faucibus vulputate dui Quisque dignissim elit felis, id
+              pellentesque dui maximus nec. Vestibulum molestie euismod mi, sed
+              ultricies ante ultricies a.
+            </p>
+            <p>
+              Nullam commodo maximus quam et vehicula. Cras ut pharetra eros.
+              Curabitur vel erat efficitur, sodales ex in, efficitur libero.
+              Duis vulputate leo nibh, et placerat est vulputate ac. Maecenas
+              fringilla, mi sit amet aliquet tempor, est velit fermentum nibh,
+              id condimentum est tortor sit amet ex. Fusce eget vehicula neque.
+              Nulla facilisi.
+            </p>
+          </div>
+
+          <div class="tab3">
+            <div class="tab-image">
+              <img src="./assets/ipad.png" />
+            </div>
+            <h2>Lorem Ipsum is simply dummy text</h2>
+            <p>
+              Nullam commodo maximus quam et vehicula. Cras ut pharetra eros.
+              Curabitur vel erat efficitur, sodales ex in, efficitur libero.
+              Duis vulputate leo nibh, et placerat est vulputate ac. Maecenas
+              fringilla, mi sit amet aliquet tempor, est velit fermentum nibh,
+              id condimentum est tortor sit amet ex. Fusce eget vehicula neque.
+              Nulla facilisi.
+            </p>
+          </div>
+
+          <div class="tab4">
+            <div class="tab-image">
+              <img src="./assets/ipad.png" />
+            </div>
+            <h2>Lorem Ipsum is simply dummy text</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+              lobortis dui. Etiam vulputate consequat facilisis. Pellentesque
+              luctus felis vel quam lobortis molestie. Vivamus elit quam, dictum
+              eget ipsum vitae, vulputate imperdiet velit. Sed diam mauris,
+              lacinia vitae justo luctus, eleifend fermentum dolor. Vivamus
+              elementum ultrices magna, vel tincidunt odio rhoncus id. Nunc
+              scelerisque faucibus felis, a euismod mi iaculis non. Pellentesque
+              mollis eros metus, tincidunt cursus magna iaculis et. Donec
+              faucibus vulputate dui. Pellentesque habitant morbi tristique
+              senectus et netus et malesuada fames ac turpis egestas. Etiam
+              rhoncus mollis orci, ac tincidunt justo elementum euismod. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos. Cras lobortis et arcu sit amet laoreet.
+              Vivamus rutrum, nunc ac sollicitudin convallis, lectus tellus
+              sollicitudin massa, vel pharetra diam ante a velit. Quisque
+              dignissim elit felis, id pellentesque dui maximus nec. Vestibulum
+              molestie euismod mi, sed ultricies ante ultricies a.
+            </p>
+            <p>
+              Nullam commodo maximus quam et vehicula. Cras ut pharetra eros.
+              Curabitur vel erat efficitur, sodales ex in, efficitur libero.
+              Duis vulputate leo nibh, et placerat est vulputate ac. Maecenas
+              fringilla, mi sit amet aliquet tempor, est velit fermentum nibh,
+              id condimentum est tortor sit amet ex. Fusce eget vehicula neque.
+              Nulla facilisi.
+            </p>
+          </div>
+        </section>
+      </div>
+      <div class="content-card">
+        <div class="card-image">
+          <img src="./assets/screen_shot.png" />
+        </div>
+        <div class="card-content">
+          <h2>Why choose us?</h2>
+
+          <ul class="card-list">
+            <li>
+              <img src="./assets/check_list.png" />
+              <div class="card-list-item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              </div>
+            </li>
+            <li>
+              <img src="./assets/check_list.png" />
+              <div class="card-list-item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              </div>
+            </li>
+            <li>
+              <img src="./assets/check_list.png" />
+              <div class="card-list-item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              </div>
+            </li>
+            <li>
+              <img src="./assets/check_list.png" />
+              <div class="card-list-item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              </div>
+            </li>
+            <li>
+              <img src="./assets/check_list.png" />
+              <div class="card-list-item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              </div>
+            </li>
+            <li>
+              <img src="./assets/check_list.png" />
+              <div class="card-list-item">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="forms">
+        <div class="login-form-card">
+          <h2 class="form-header">Member login</h2>
+          <div class="form-content">
+            <input
+              class="form-text-input"
+              type="text"
+              placeholder="User name"
+            />
+            <input
+              class="form-text-input"
+              type="password"
+              placeholder="Password"
+            />
+            <button type="submit" onclick="location.href = '#';">
+              Log me in
+            </button>
+          </div>
+        </div>
+        <div class="subscribe-form-card">
+          <h2 class="form-header">Subscribe to our weekly newsletter</h2>
+          <div class="form-content">
+            <input
+              class="form-text-input"
+              type="text"
+              placeholder="email address"
+            />
+            <button type="submit" onclick="location.href = '#';">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-section">
+        <h3>About us</h3>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Why us</a></li>
+          <li><a href="#">Customer stories</a></li>
+          <li><a href="#">Press Resources</a></li>
+          <li><a href="#">Press Releases</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About us</h3>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Why us</a></li>
+          <li><a href="#">Customer stories</a></li>
+          <li><a href="#">Press Resources</a></li>
+          <li><a href="#">Press Releases</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Testimoanials</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industr standard dummy text ever
+          since the 1500s, when an unknown printer took a
+        </p>
+        <p><b>Lorem Ipsum is simply</b></p>
+        <p><b>Owner, Lorem Ipsum</b></p>
+      </div>
+      <div class="footer-section">
+        <div class="footer-logo">
+          <div class="logo">
+            <a href="#">
+              <img src="./assets/logo.png" alt="Logo" />
+            </a>
+          </div>
+          <p>
+            <a href="https://cssauthor.com" target="_blank">© cssauthor.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

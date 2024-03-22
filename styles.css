@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Segoe WPN";
+  src: url("SegoeWPN.woff");
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  background-image: url(assets/background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.menu {
+  display: flex;
+  width: 55%;
+  justify-content: center;
+}
+
+.menu ul {
+  display: inline-flex;
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+.menu li {
+  margin: 0 30px;
+}
+
+.menu li a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17pt;
+  font-weight: lighter;
+  color: #ffffff;
+  line-height: 0.7;
+}
+
+.logo {
+  display: flex;
+  min-width: 45%;
+  justify-content: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  min-width: 100%;
+}
+
+/* Make the images invisible by default */
+.container_wrap {
+  display: none;
+}
+
+.container_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.slide-content {
+  margin-left: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container_content img {
+  margin-bottom: -65px;
+}
+
+.slide-content h1 {
+  font-size: 65px;
+  font-family: "Segoe WPN", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  text-align: left;
+  line-height: 0.8;
+  letter-spacing: 3px;
+}
+
+.slide-content p {
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  color: #ffffff;
+  text-align: left;
+}
+
+.banner_btn {
+  margin-top: 10px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #313332;
+  background-color: #2a704f;
+  padding: 0 8px;
+  opacity: 0.8;
+  color: #ffffff;
+  font-size: 22px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: lighter;
+  width: fit-content;
+}
+
+.banner_btn:hover {
+  cursor: pointer;
+  background-color: #1a402e;
+}
+
+/* forward & Back buttons */
+.Back,
+.forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  transition: 0.4s ease;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover,
+.forward:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+footer {
+  background-image: url("./assets/footer_bg.png");
+  display: flex;
+  justify-content: center;
+  padding: 2rem 8rem;
+}
+
+footer .footer-section {
+  flex: 1 1 0px;
+}
+
+.footer-section {
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+.footer-section > h3 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.footer-section .footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.footer-section a {
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}

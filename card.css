@@ -1,0 +1,33 @@
+.content-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content-card .card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-card .card-content h2 {
+  color: #727171;
+  font-weight: lighter;
+  font-size: 36px;
+}
+
+.content-card .card-content li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.content-card .card-content li img {
+  height: 18px;
+  margin-right: 8px;
+}
+
+.content-card .card-content li .card-list-item {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #727171;
+  font-weight: lighter;
+}
